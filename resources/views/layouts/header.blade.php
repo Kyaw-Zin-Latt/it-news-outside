@@ -16,7 +16,7 @@
                 <button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="{{ isset(Auth::user()->photo) ? asset('storage/profile/'.Auth::user()->photo) : asset('dashboard/img/user-default-photo.png') }}" class="user-img shadow-sm" alt="">
                     <span class="ml-0 ml-md-2 d-none d-md-inline-block">
-                        Hein Htet Zan
+                        {{ Auth::user()->name }}
                     </span>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
